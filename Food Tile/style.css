@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(216, 210, 210);
+}
+
+.container{
+    width: 600px;
+    height: 236px;
+    border: none;
+    background-color: white;
+    display: flex;
+    border-radius: 35px;
+    align-items: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: 12px;
+    padding: 4px;
+    object-fit: cover;
+    border-radius: 28px;
+}
+
+svg{
+    width: 42px;
+    height: 38px;
+    fill: red;
+    cursor: pointer;
+}
+
+.content-container{
+    display: flex;
+}
+
+.title-n-cost{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding:10px;
+}
+.quantity-n-delete{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding:10px;
+}
+
+.quantity{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 21px;
+    align-items: center;
+}
+
+.description{
+    margin: 10px;
+    padding:10px;
+    color: grey;
+}
+
+.title,.cost{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.cost{
+    font-weight: bold;
+}
+button {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.number{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title-n-cost,.description,.quantity-n-delete{
+    margin-left: 0px;
+    padding-left: 8px;
+}
+
+
+
+@media (width<550px){
+    .container{
+        height: 500px;
+        width: 300px;
+        flex-wrap: wrap;
+    }
+    .content-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 90%;
+    }
+    .title-n-cost,.description,.quantity-n-delete{
+        margin-left: 10px;
+        padding-left: 8px;  
+    }
+}
